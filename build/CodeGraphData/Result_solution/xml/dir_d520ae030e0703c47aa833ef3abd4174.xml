@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_d520ae030e0703c47aa833ef3abd4174" kind="dir">
+    <compoundname>C:/Users/Henry/Documents/GitHub/tomato_classification</compoundname>
+    <innerfile refid="color_profile_8cpp">colorProfile.cpp</innerfile>
+    <innerfile refid="color_profile_8h">colorProfile.h</innerfile>
+    <innerfile refid="function_8cpp">function.cpp</innerfile>
+    <innerfile refid="function_8h">function.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="stdafx_8cpp">stdafx.cpp</innerfile>
+    <innerfile refid="stdafx_8h">stdafx.h</innerfile>
+    <innerfile refid="targetver_8h">targetver.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/"/>
+  </compounddef>
+</doxygen>

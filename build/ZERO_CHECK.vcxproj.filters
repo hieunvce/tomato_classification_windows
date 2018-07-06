@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\9d1b3e874cd148618bbc5dfeef6f1306\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E9F8B773-7448-37D9-BFBE-D8840F4B4733}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

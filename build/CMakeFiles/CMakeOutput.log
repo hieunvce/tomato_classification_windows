@@ -1,0 +1,675 @@
+The system is: Windows - 10.0.16299 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.6.82.30579 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 4/1/2018 12:05:50 AM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\3.11.0\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\3.11.0\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\Hostx86\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\3.11.0\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.67
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/3.11.0/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.6.82.30579 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 4/1/2018 12:05:53 AM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\3.11.0\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\3.11.0\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\Hostx86\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\3.11.0\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.25
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/3.11.0/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_d6b7d.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.6.82.30579 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 4/1/2018 12:05:56 AM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_d6b7d.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_d6b7d.dir\Debug\".
+  Creating directory "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_d6b7d.dir\Debug\cmTC_d6b7d.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_d6b7d.dir\Debug\cmTC_d6b7d.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d6b7d.dir\Debug\\" /Fd"cmTC_d6b7d.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.13.26129 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d6b7d.dir\Debug\\" /Fd"cmTC_d6b7d.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_d6b7d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_d6b7d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_d6b7d.lib" /MACHINE:X64  /machine:x64 cmTC_d6b7d.dir\Debug\testCCompiler.obj
+  cmTC_d6b7d.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_d6b7d.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_d6b7d.dir\Debug\cmTC_d6b7d.tlog\unsuccessfulbuild".
+  Touching "cmTC_d6b7d.dir\Debug\cmTC_d6b7d.tlog\cmTC_d6b7d.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_d6b7d.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.20
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_b8df2.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.6.82.30579 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 4/1/2018 12:05:59 AM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_b8df2.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_b8df2.dir\Debug\".
+  Creating directory "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_b8df2.dir\Debug\cmTC_b8df2.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_b8df2.dir\Debug\cmTC_b8df2.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b8df2.dir\Debug\\" /Fd"cmTC_b8df2.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.13.26129 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b8df2.dir\Debug\\" /Fd"cmTC_b8df2.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_b8df2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_b8df2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_b8df2.lib" /MACHINE:X64  /machine:x64 cmTC_b8df2.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_b8df2.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_b8df2.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_b8df2.dir\Debug\cmTC_b8df2.tlog\unsuccessfulbuild".
+  Touching "cmTC_b8df2.dir\Debug\cmTC_b8df2.tlog\cmTC_b8df2.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_b8df2.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.98
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_ab540.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.6.82.30579 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 4/1/2018 12:06:02 AM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_ab540.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_ab540.dir\Debug\".
+  Creating directory "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_ab540.dir\Debug\cmTC_ab540.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_ab540.dir\Debug\cmTC_ab540.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ab540.dir\Debug\\" /Fd"cmTC_ab540.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.13.26129 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ab540.dir\Debug\\" /Fd"cmTC_ab540.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_ab540.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_ab540.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_ab540.lib" /MACHINE:X64  /machine:x64 cmTC_ab540.dir\Debug\testCXXCompiler.obj
+  cmTC_ab540.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_ab540.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_ab540.dir\Debug\cmTC_ab540.tlog\unsuccessfulbuild".
+  Touching "cmTC_ab540.dir\Debug\cmTC_ab540.tlog\cmTC_ab540.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_ab540.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.93
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_0680e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.6.82.30579 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 4/1/2018 12:06:05 AM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_0680e.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_0680e.dir\Debug\".
+  Creating directory "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_0680e.dir\Debug\cmTC_0680e.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_0680e.dir\Debug\cmTC_0680e.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0680e.dir\Debug\\" /Fd"cmTC_0680e.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.13.26129 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0680e.dir\Debug\\" /Fd"cmTC_0680e.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_0680e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_0680e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_0680e.lib" /MACHINE:X64  /machine:x64 cmTC_0680e.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_0680e.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_0680e.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_0680e.dir\Debug\cmTC_0680e.tlog\unsuccessfulbuild".
+  Touching "cmTC_0680e.dir\Debug\cmTC_0680e.tlog\cmTC_0680e.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_0680e.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.13
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_6d745.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.6.82.30579 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 4/1/2018 12:06:08 AM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_6d745.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_6d745.dir\Debug\".
+  Creating directory "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_6d745.dir\Debug\cmTC_6d745.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_6d745.dir\Debug\cmTC_6d745.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6d745.dir\Debug\\" /Fd"cmTC_6d745.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\feature_tests.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.13.26129 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6d745.dir\Debug\\" /Fd"cmTC_6d745.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\feature_tests.cxx
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_6d745.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_6d745.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_6d745.lib" /MACHINE:X64  /machine:x64 cmTC_6d745.dir\Debug\feature_tests.obj
+  cmTC_6d745.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_6d745.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_6d745.dir\Debug\cmTC_6d745.tlog\unsuccessfulbuild".
+  Touching "cmTC_6d745.dir\Debug\cmTC_6d745.tlog\cmTC_6d745.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_6d745.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.21
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: /DWIN32;/D_WINDOWS;/W3
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/6/2018 1:19:52 PM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\3.11.0\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\3.11.0\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\Hostx86\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\3.11.0\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:09.84
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/3.11.0/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/6/2018 1:20:04 PM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\3.11.0\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\3.11.0\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\Hostx86\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\3.11.0\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:07.06
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/3.11.0/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_a4dbe.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/6/2018 1:20:14 PM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_a4dbe.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_a4dbe.dir\Debug\".
+  Creating directory "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_a4dbe.dir\Debug\cmTC_a4dbe.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_a4dbe.dir\Debug\cmTC_a4dbe.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a4dbe.dir\Debug\\" /Fd"cmTC_a4dbe.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26430 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  testCCompiler.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a4dbe.dir\Debug\\" /Fd"cmTC_a4dbe.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_a4dbe.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_a4dbe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_a4dbe.lib" /MACHINE:X64  /machine:x64 cmTC_a4dbe.dir\Debug\testCCompiler.obj
+  cmTC_a4dbe.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_a4dbe.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_a4dbe.dir\Debug\cmTC_a4dbe.tlog\unsuccessfulbuild".
+  Touching "cmTC_a4dbe.dir\Debug\cmTC_a4dbe.tlog\cmTC_a4dbe.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_a4dbe.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:05.68
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_541df.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/6/2018 1:20:21 PM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_541df.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_541df.dir\Debug\".
+  Creating directory "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_541df.dir\Debug\cmTC_541df.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_541df.dir\Debug\cmTC_541df.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_541df.dir\Debug\\" /Fd"cmTC_541df.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26430 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  CMakeCCompilerABI.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_541df.dir\Debug\\" /Fd"cmTC_541df.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCCompilerABI.c"
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_541df.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_541df.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_541df.lib" /MACHINE:X64  /machine:x64 cmTC_541df.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_541df.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_541df.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_541df.dir\Debug\cmTC_541df.tlog\unsuccessfulbuild".
+  Touching "cmTC_541df.dir\Debug\cmTC_541df.tlog\cmTC_541df.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_541df.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:05.16
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_62d47.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/6/2018 1:20:28 PM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_62d47.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_62d47.dir\Debug\".
+  Creating directory "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_62d47.dir\Debug\cmTC_62d47.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_62d47.dir\Debug\cmTC_62d47.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_62d47.dir\Debug\\" /Fd"cmTC_62d47.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26430 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_62d47.dir\Debug\\" /Fd"cmTC_62d47.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_62d47.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_62d47.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_62d47.lib" /MACHINE:X64  /machine:x64 cmTC_62d47.dir\Debug\testCXXCompiler.obj
+  cmTC_62d47.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_62d47.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_62d47.dir\Debug\cmTC_62d47.tlog\unsuccessfulbuild".
+  Touching "cmTC_62d47.dir\Debug\cmTC_62d47.tlog\cmTC_62d47.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_62d47.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:05.70
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_d0d82.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/6/2018 1:20:35 PM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_d0d82.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_d0d82.dir\Debug\".
+  Creating directory "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_d0d82.dir\Debug\cmTC_d0d82.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_d0d82.dir\Debug\cmTC_d0d82.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d0d82.dir\Debug\\" /Fd"cmTC_d0d82.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26430 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  CMakeCXXCompilerABI.cpp
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d0d82.dir\Debug\\" /Fd"cmTC_d0d82.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.11\Modules\CMakeCXXCompilerABI.cpp"
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_d0d82.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_d0d82.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_d0d82.lib" /MACHINE:X64  /machine:x64 cmTC_d0d82.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_d0d82.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_d0d82.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_d0d82.dir\Debug\cmTC_d0d82.tlog\unsuccessfulbuild".
+  Touching "cmTC_d0d82.dir\Debug\cmTC_d0d82.tlog\cmTC_d0d82.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_d0d82.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:05.89
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_eabdc.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/6/2018 1:20:42 PM.
+Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_eabdc.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_eabdc.dir\Debug\".
+  Creating directory "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_eabdc.dir\Debug\cmTC_eabdc.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_eabdc.dir\Debug\cmTC_eabdc.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_eabdc.dir\Debug\\" /Fd"cmTC_eabdc.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\feature_tests.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26430 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  feature_tests.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_eabdc.dir\Debug\\" /Fd"cmTC_eabdc.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_eabdc.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_eabdc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Henry/Documents/GitHub/tomato_classification/build/CMakeFiles/CMakeTmp/Debug/cmTC_eabdc.lib" /MACHINE:X64  /machine:x64 cmTC_eabdc.dir\Debug\feature_tests.obj
+  cmTC_eabdc.vcxproj -> C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\Debug\cmTC_eabdc.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_eabdc.dir\Debug\cmTC_eabdc.tlog\unsuccessfulbuild".
+  Touching "cmTC_eabdc.dir\Debug\cmTC_eabdc.tlog\cmTC_eabdc.lastbuildstate".
+Done Building Project "C:\Users\Henry\Documents\GitHub\tomato_classification\build\CMakeFiles\CMakeTmp\cmTC_eabdc.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:04.11
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates

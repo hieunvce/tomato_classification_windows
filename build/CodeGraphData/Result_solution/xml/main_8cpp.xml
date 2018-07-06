@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="main_8cpp" kind="file">
+    <compoundname>main.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">opencv2/opencv.hpp</includes>
+    <includes refid="color_profile_8h" local="yes">colorProfile.h</includes>
+    <includes refid="function_8h" local="yes">function.h</includes>
+    <incdepgraph>
+      <node id="32">
+        <label>function.h</label>
+        <link refid="function_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>opencv2/opencv.hpp</label>
+      </node>
+      <node id="29">
+        <label>string.h</label>
+      </node>
+      <node id="27">
+        <label>C:/Users/Henry/Documents/GitHub/tomato_classification/main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>colorProfile.h</label>
+        <link refid="color_profile_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="main_8cpp_1a2af119db7137caaf3b4580faffff0ac9" prot="public" static="no" mutable="no">
+        <type>vector&lt; Vec3b &gt;</type>
+        <definition>vector&lt;Vec3b&gt; setColor</definition>
+        <argsstring></argsstring>
+        <name>setColor</name>
+        <initializer>={Vec3b(0,0,255),Vec3b(0,255,255),
+                        Vec3b(0,255,0),Vec3b(255,255,255)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/main.cpp" line="10" column="1" bodyfile="C:/Users/Henry/Documents/GitHub/tomato_classification/main.cpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/main.cpp" line="13" column="1" bodyfile="C:/Users/Henry/Documents/GitHub/tomato_classification/main.cpp" bodystart="13" bodyend="58"/>
+        <references refid="function_8cpp_1a1d36cded4b486b32db5ae04d3c01eeff" compoundref="function_8cpp" startline="242" endline="283">runOnImage</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/opencv.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="color_profile_8h" kindref="compound">colorProfile.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="function_8h" kindref="compound">function.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">cv;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="main_8cpp_1a2af119db7137caaf3b4580faffff0ac9" refkind="member"><highlight class="normal">vector&lt;Vec3b&gt;<sp/><ref refid="main_8cpp_1a2af119db7137caaf3b4580faffff0ac9" kindref="member">setColor</ref>={Vec3b(0,0,255),Vec3b(0,255,255),</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vec3b(0,255,0),Vec3b(255,255,255)};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*int<sp/>runOnDevice=0;</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>VideoCapture<sp/>camera(0);</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>Mat<sp/>srcImage;</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(argc==2<sp/>&amp;&amp;<sp/>!strcmp(argv[1],&quot;--camera&quot;))<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>runOnDevice<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VideoCapture<sp/>camera(argv[2]);</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>else<sp/>if<sp/>(argc==2<sp/>&amp;&amp;<sp/>!strcmp(argv[1],&quot;--video&quot;))<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>runOnDevice<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VideoCapture<sp/>camera(argv[2]);</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>else<sp/>if<sp/>(argc==2<sp/>&amp;&amp;<sp/>!strcmp(argv[1],&quot;--image&quot;))<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>runOnDevice<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srcImage=imread(argv[2]);</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;Usage:&quot;<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;\t--camera<sp/>&lt;cameraID&gt;:<sp/>Run<sp/>on<sp/>camera<sp/>with<sp/>&lt;cameraID&gt;<sp/>(cameraID<sp/>is<sp/>integer).<sp/>If<sp/>&lt;cameraID&gt;=0:<sp/>Run<sp/>on<sp/>webcam&quot;<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;\t--video<sp/>&lt;videoPath&gt;:<sp/>Run<sp/>on<sp/>video<sp/>at<sp/>&lt;videoPath&gt;&quot;<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;\t--image<sp/>&lt;imagePath&gt;:<sp/>Run<sp/>on<sp/>image<sp/>at<sp/>&lt;imagePath&gt;&quot;<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;Default<sp/>run<sp/>on<sp/>Webcame...<sp/>ESC<sp/>to<sp/>exit.&quot;<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"></highlight></codeline>
+<codeline lineno="37"><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(runOnDevice<sp/>&lt;<sp/>3)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>ok<sp/>=<sp/>runOnCamera(camera);</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>destroyAllWindows();</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>}<sp/>else<sp/>if<sp/>(runOnDevice==3){</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Size<sp/>standardSize(500,500);</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resize(srcImage,srcImage,standardSize);</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mat<sp/>d<sp/>=<sp/>runOnImage(srcImage);</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>namedWindow(&quot;d<sp/>image&quot;,CV_WINDOW_AUTOSIZE);</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imshow(&quot;d<sp/>image&quot;,d);</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>waitKey(0);</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>srcImage=imread(</highlight><highlight class="stringliteral">&quot;images/1.jpg&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>Size<sp/>standardSize(500,500);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>resize(srcImage,srcImage,standardSize);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>imshow(</highlight><highlight class="stringliteral">&quot;source<sp/>image&quot;</highlight><highlight class="normal">,srcImage);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>d<sp/>=<sp/><ref refid="function_8cpp_1a1d36cded4b486b32db5ae04d3c01eeff" kindref="member">runOnImage</ref>(srcImage);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>namedWindow(</highlight><highlight class="stringliteral">&quot;d<sp/>image&quot;</highlight><highlight class="normal">,CV_WINDOW_AUTOSIZE);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>imshow(</highlight><highlight class="stringliteral">&quot;d<sp/>image&quot;</highlight><highlight class="normal">,d);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>waitKey(0);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/main.cpp"/>
+  </compounddef>
+</doxygen>

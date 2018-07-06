@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="function_8cpp" kind="file">
+    <compoundname>function.cpp</compoundname>
+    <includes refid="function_8h" local="yes">function.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>function.h</label>
+        <link refid="function_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>opencv2/opencv.hpp</label>
+      </node>
+      <node id="18">
+        <label>colorProfile.h</label>
+        <link refid="color_profile_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp</label>
+        <link refid="function.cpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="function_8cpp_1a0200fbdd02a74f99ec4dde2910021d22" prot="public" static="no">
+        <name>MIN_NUMBER_PIXEL</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" line="7" column="9" bodyfile="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" bodystart="7" bodyend="-1"/>
+        <referencedby refid="function_8h_1ab403cdaa778201fccc138f0e6ff2255f" compoundref="function_8cpp" startline="17" endline="60">SegmentImage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="function_8cpp_1adbea5241a0432c4dec27b2f464c9ad43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SegmentImage</definition>
+        <argsstring>(Mat LabImage, Mat &amp;segImage, Color &amp;colorID)</argsstring>
+        <name>SegmentImage</name>
+        <param>
+          <type>Mat</type>
+          <declname>LabImage</declname>
+        </param>
+        <param>
+          <type>Mat &amp;</type>
+          <declname>segImage</declname>
+        </param>
+        <param>
+          <type><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1c" kindref="member">Color</ref> &amp;</type>
+          <declname>colorID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Segment LabImage and find main color of tomato, return at colorID Return: void</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LabImage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>segImage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result of segmentation process </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colorID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Main color of tomato </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><blockquote><para>Begin segmentation process </para></blockquote></para>        </inbodydescription>
+        <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" line="17" column="1" bodyfile="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" bodystart="17" bodyend="60"/>
+        <references refid="color_profile_8cpp_1a5ac86ff469e90739f63641939c414f55" compoundref="color_profile_8cpp" startline="44" endline="54">color</references>
+        <references refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca" compoundref="color_profile_8h" startline="17">GREEN</references>
+        <references refid="function_8cpp_1a0200fbdd02a74f99ec4dde2910021d22" compoundref="function_8cpp" startline="7">MIN_NUMBER_PIXEL</references>
+        <references refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1cadbf1dee1b8cd7ea3c82661943c7b74f4" compoundref="color_profile_8h" startline="17">OTHER</references>
+        <references refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88" compoundref="color_profile_8h" startline="17">RED</references>
+        <references refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1cae735a848bf82163a19236ead1c3ef2d2" compoundref="color_profile_8h" startline="17">YELLOW</references>
+        <referencedby refid="function_8h_1a1d36cded4b486b32db5ae04d3c01eeff" compoundref="function_8cpp" startline="242" endline="283">runOnImage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="function_8cpp_1aedb55be6893890e03c2775a993eb17c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; Point &gt;</type>
+        <definition>vector&lt;Point&gt; detectROI</definition>
+        <argsstring>(Mat segImage)</argsstring>
+        <name>detectROI</name>
+        <param>
+          <type>Mat</type>
+          <declname>segImage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>detectROI: Detect ROI which have tomato in image It returns a contour is the ROI. Return vector&lt;Point&gt; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>segImage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" line="69" column="1" bodyfile="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" bodystart="69" bodyend="99"/>
+        <referencedby refid="function_8h_1a1d36cded4b486b32db5ae04d3c01eeff" compoundref="function_8cpp" startline="242" endline="283">runOnImage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="function_8cpp_1aedfc53e08b37cc8ccaf4c705a7c701f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Size2i</type>
+        <definition>Size2i calculateSize</definition>
+        <argsstring>(vector&lt; Point &gt; ROI)</argsstring>
+        <name>calculateSize</name>
+        <param>
+          <type>vector&lt; Point &gt;</type>
+          <declname>ROI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>calculateSize: calculate size of tomato (size of ROI) Print size to console Return: Size2i <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ROI</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" line="107" column="1" bodyfile="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" bodystart="107" bodyend="117"/>
+        <referencedby refid="function_8h_1a1d36cded4b486b32db5ae04d3c01eeff" compoundref="function_8cpp" startline="242" endline="283">runOnImage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="function_8cpp_1ae8d4c04b6c18c68c18dc8b1518d86a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Mat</type>
+        <definition>Mat createMask</definition>
+        <argsstring>(Size sizeOfMask, vector&lt; Point &gt; ROI)</argsstring>
+        <name>createMask</name>
+        <param>
+          <type>Size</type>
+          <declname>sizeOfMask</declname>
+        </param>
+        <param>
+          <type>vector&lt; Point &gt;</type>
+          <declname>ROI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>createMask: Create a mask image that fill ROI with 255,255,255 Return: Mat image <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sizeOfMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ROI</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" line="126" column="1" bodyfile="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" bodystart="126" bodyend="134"/>
+        <referencedby refid="function_8h_1a1d36cded4b486b32db5ae04d3c01eeff" compoundref="function_8cpp" startline="242" endline="283">runOnImage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="function_8cpp_1ae4879e9efbf23c4fdcb7a24f7a2e3cbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int countBadPixel</definition>
+        <argsstring>(Mat LabImage, Mat maskImage)</argsstring>
+        <name>countBadPixel</name>
+        <param>
+          <type>Mat</type>
+          <declname>LabImage</declname>
+        </param>
+        <param>
+          <type>Mat</type>
+          <declname>maskImage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>countBadPixel: Count number of bad pixels on tomato<itemizedlist>
+<listitem><para>Get LabImage[pixel]</para></listitem><listitem><para>If (maskImage[pixel]==1 &amp;&amp; color[pixel]=OTHER) =&gt; badSegImage[pixel]=1, countBadPixel++, else =0</para></listitem><listitem><para>Return: int numberOfBadPixels</para></listitem><listitem><para>In future:</para></listitem><listitem><para>+ Find contours of badSegImage</para></listitem><listitem><para>+ Return: vector&lt;vector&lt;Point&gt; &gt; contains Bad contours <simplesect kind="return"><para></para></simplesect>
+</para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" line="146" column="1" bodyfile="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" bodystart="146" bodyend="162"/>
+        <references refid="color_profile_8cpp_1a5ac86ff469e90739f63641939c414f55" compoundref="color_profile_8cpp" startline="44" endline="54">color</references>
+        <references refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1cadbf1dee1b8cd7ea3c82661943c7b74f4" compoundref="color_profile_8h" startline="17">OTHER</references>
+        <referencedby refid="function_8h_1a1d36cded4b486b32db5ae04d3c01eeff" compoundref="function_8cpp" startline="242" endline="283">runOnImage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="function_8cpp_1a742665d7d95453ad56253ee8091c7963" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4" kindref="member">STATUS</ref></type>
+        <definition>STATUS gradeTomato</definition>
+        <argsstring>(Color colorID, int nOfBadPixels)</argsstring>
+        <name>gradeTomato</name>
+        <param>
+          <type><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1c" kindref="member">Color</ref></type>
+          <declname>colorID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nOfBadPixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gradeTomato: Grade Tomato base on color and number of bad pixels if (number of pixel &gt; MAX_BAD_PIXEL) then tomato is bad. Return: STATUS is grade of tomato <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nOfBadPixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" line="172" column="1" bodyfile="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" bodystart="172" bodyend="197"/>
+        <references refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca" compoundref="color_profile_8h" startline="17">GREEN</references>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a6a7bb408673e07c9fd71397bf814e88c" compoundref="function_8h" startline="12">GREEN_BAD</references>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a645c6b6a4b4e8b6411079b14a518155a" compoundref="function_8h" startline="12">GREEN_NORMAL</references>
+        <references refid="function_8h_1aa8b334ef12d06c60c70a7a7a5332c2ee" compoundref="function_8h" startline="15">MAX_BAD_PIXEL</references>
+        <references refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88" compoundref="color_profile_8h" startline="17">RED</references>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a3e1d0b643141525ab7726a75c0b33c49" compoundref="function_8h" startline="12">RED_BAD</references>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a7e8eb9fcc440e84ed79330d0d511c6a2" compoundref="function_8h" startline="12">RED_NORMAL</references>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4ad2dd9ae53d40a23f5c31049a0aac0396" compoundref="function_8h" startline="11">SKIP_SUCCESS</references>
+        <references refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1cae735a848bf82163a19236ead1c3ef2d2" compoundref="color_profile_8h" startline="17">YELLOW</references>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a742c52635c20c342e71adabdfda0c369" compoundref="function_8h" startline="12">YELLOW_BAD</references>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a0f5b10c2a176fd5585690a8038598f89" compoundref="function_8h" startline="12">YELLOW_NORMAL</references>
+        <referencedby refid="function_8h_1a1d36cded4b486b32db5ae04d3c01eeff" compoundref="function_8cpp" startline="242" endline="283">runOnImage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="function_8cpp_1a4ac12e3e318d9cea7de43fdd378aec28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void showInfo</definition>
+        <argsstring>(Size2i sizeOfTomato, STATUS grade)</argsstring>
+        <name>showInfo</name>
+        <param>
+          <type>Size2i</type>
+          <declname>sizeOfTomato</declname>
+        </param>
+        <param>
+          <type><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4" kindref="member">STATUS</ref></type>
+          <declname>grade</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>showInfo: Print to console info about tomato like color, size, number of bad pixels <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tomatoColor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sizeOfTomato</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nOfBadPixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" line="205" column="1" bodyfile="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" bodystart="205" bodyend="230"/>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a6a7bb408673e07c9fd71397bf814e88c" compoundref="function_8h" startline="12">GREEN_BAD</references>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a645c6b6a4b4e8b6411079b14a518155a" compoundref="function_8h" startline="12">GREEN_NORMAL</references>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a3e1d0b643141525ab7726a75c0b33c49" compoundref="function_8h" startline="12">RED_BAD</references>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a7e8eb9fcc440e84ed79330d0d511c6a2" compoundref="function_8h" startline="12">RED_NORMAL</references>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a742c52635c20c342e71adabdfda0c369" compoundref="function_8h" startline="12">YELLOW_BAD</references>
+        <references refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a0f5b10c2a176fd5585690a8038598f89" compoundref="function_8h" startline="12">YELLOW_NORMAL</references>
+        <referencedby refid="function_8h_1a1d36cded4b486b32db5ae04d3c01eeff" compoundref="function_8cpp" startline="242" endline="283">runOnImage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="function_8cpp_1a1d36cded4b486b32db5ae04d3c01eeff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Mat</type>
+        <definition>Mat runOnImage</definition>
+        <argsstring>(Mat srcImage)</argsstring>
+        <name>runOnImage</name>
+        <param>
+          <type>Mat</type>
+          <declname>srcImage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><heading level="2">runOnImage: Run all function on an image </heading>
+</para><para>segmentImage -&gt; detecROI -&gt; calculateSize <heading level="2">-&gt; createMask -&gt; countBadPixel -&gt; gradeTomato </heading>
+</para><para>Return: grade of tomato or status of function <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>srcImage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" line="242" column="1" bodyfile="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" bodystart="242" bodyend="283"/>
+        <references refid="function_8cpp_1aedfc53e08b37cc8ccaf4c705a7c701f1" compoundref="function_8cpp" startline="107" endline="117">calculateSize</references>
+        <references refid="function_8cpp_1ae4879e9efbf23c4fdcb7a24f7a2e3cbb" compoundref="function_8cpp" startline="146" endline="162">countBadPixel</references>
+        <references refid="function_8cpp_1ae8d4c04b6c18c68c18dc8b1518d86a54" compoundref="function_8cpp" startline="126" endline="134">createMask</references>
+        <references refid="function_8cpp_1aedb55be6893890e03c2775a993eb17c2" compoundref="function_8cpp" startline="69" endline="99">detectROI</references>
+        <references refid="function_8cpp_1a742665d7d95453ad56253ee8091c7963" compoundref="function_8cpp" startline="172" endline="197">gradeTomato</references>
+        <references refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1cadbf1dee1b8cd7ea3c82661943c7b74f4" compoundref="color_profile_8h" startline="17">OTHER</references>
+        <references refid="function_8cpp_1adbea5241a0432c4dec27b2f464c9ad43" compoundref="function_8cpp" startline="17" endline="60">SegmentImage</references>
+        <references refid="function_8cpp_1a4ac12e3e318d9cea7de43fdd378aec28" compoundref="function_8cpp" startline="205" endline="230">showInfo</references>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="13" endline="58">main</referencedby>
+        <referencedby refid="function_8h_1ab0c510222687826611917eb843e29187" compoundref="function_8cpp" startline="292" endline="318">runOnCamera</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="function_8cpp_1ab0c510222687826611917eb843e29187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int runOnCamera</definition>
+        <argsstring>(VideoCapture camera)</argsstring>
+        <name>runOnCamera</name>
+        <param>
+          <type>VideoCapture</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run program on camera or a video To write video, pass writeVideo=1 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>writeVideo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" line="292" column="1" bodyfile="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp" bodystart="292" bodyend="318"/>
+        <references refid="function_8cpp_1a1d36cded4b486b32db5ae04d3c01eeff" compoundref="function_8cpp" startline="242" endline="283">runOnImage</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>hieunguyen<sp/>on<sp/>6/14/18.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="function_8h" kindref="compound">function.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="function_8cpp_1a0200fbdd02a74f99ec4dde2910021d22" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_NUMBER_PIXEL<sp/>20</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="17" refid="function_8h_1ab403cdaa778201fccc138f0e6ff2255f" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="function_8cpp_1adbea5241a0432c4dec27b2f464c9ad43" kindref="member">SegmentImage</ref>(Mat<sp/>LabImage,<sp/>Mat<sp/>&amp;segImage,<sp/><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1c" kindref="member">Color</ref><sp/>&amp;colorID){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(LabImage.channels()<sp/>==<sp/>3);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>countRedPixel=0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>countYellowPixel=0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>countGreenPixel=0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;LabImage.rows;++i)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uchar<sp/>*lab_data<sp/>=<sp/>LabImage.ptr&lt;uchar&gt;(i);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uchar<sp/>*seg_data<sp/>=<sp/>segImage.ptr&lt;uchar&gt;(i);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>LabImage.cols;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l<sp/>=<sp/>*lab_data++;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l=l*100/255;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>*lab_data++-128;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>*lab_data++-128;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1c" kindref="member">Color</ref><sp/>pixelColor=<ref refid="color_profile_8cpp_1a5ac86ff469e90739f63641939c414f55" kindref="member">color</ref>(l,a,b);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(pixelColor){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88" kindref="member">RED</ref>:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>countRedPixel++;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1cae735a848bf82163a19236ead1c3ef2d2" kindref="member">YELLOW</ref>:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>countYellowPixel++;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca" kindref="member">GREEN</ref>:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>countGreenPixel++;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*seg_data++=255;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*seg_data++=0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(countRedPixel<sp/>&gt;=<sp/><ref refid="function_8cpp_1a0200fbdd02a74f99ec4dde2910021d22" kindref="member">MIN_NUMBER_PIXEL</ref><sp/>||<sp/>countYellowPixel<sp/>&gt;=<sp/><ref refid="function_8cpp_1a0200fbdd02a74f99ec4dde2910021d22" kindref="member">MIN_NUMBER_PIXEL</ref><sp/>||<sp/>countGreenPixel<sp/>&gt;=<sp/><ref refid="function_8cpp_1a0200fbdd02a74f99ec4dde2910021d22" kindref="member">MIN_NUMBER_PIXEL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(countRedPixel<sp/>&gt;=<sp/>countYellowPixel<sp/>&amp;&amp;<sp/>countRedPixel<sp/>&gt;=<sp/>countGreenPixel)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colorID=<ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88" kindref="member">RED</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(countYellowPixel<sp/>&gt;=<sp/>countRedPixel<sp/>&amp;&amp;<sp/>countYellowPixel<sp/>&gt;=<sp/>countGreenPixel)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colorID=<ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1cae735a848bf82163a19236ead1c3ef2d2" kindref="member">YELLOW</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colorID=<ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca" kindref="member">GREEN</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colorID=<ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1cadbf1dee1b8cd7ea3c82661943c7b74f4" kindref="member">OTHER</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="stdafx_8h_1a22d6ba6b1258e07fa04caa2b79b614b0" refkind="member"><highlight class="normal">vector&lt;Point&gt;<sp/><ref refid="function_8cpp_1aedb55be6893890e03c2775a993eb17c2" kindref="member">detectROI</ref>(Mat<sp/>segImage){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Find<sp/>contour<sp/>base<sp/>on<sp/>segImage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;Point&gt;<sp/>&gt;<sp/>contours;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Vec4i&gt;<sp/>hierarchy;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>findContours(segImage,<sp/>contours,<sp/>hierarchy,<sp/>CV_RETR_TREE,<sp/>CV_CHAIN_APPROX_SIMPLE,<sp/>Point(0,<sp/>0)<sp/>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Check<sp/>if<sp/>contour<sp/>existence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(contours.size()==0)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Find<sp/>largest<sp/>Contour<sp/>=&gt;<sp/>is<sp/>Tomato</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Point&gt;<sp/>largestContour;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxContourArea=contourArea(contours[0]);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>largestContour=contours[0];</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;contours.size();i++)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>area<sp/>=<sp/>contourArea(contours[i]);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(area<sp/>&gt;<sp/>maxContourArea)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxContourArea<sp/>=<sp/>area;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>largestContour<sp/>=<sp/>contours[i];</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Convexthull<sp/>contour</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Point&gt;<sp/>ROI;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>convexHull(largestContour,ROI);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ROI;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="function_8h_1aedfc53e08b37cc8ccaf4c705a7c701f1" refkind="member"><highlight class="normal">Size2i<sp/><ref refid="function_8cpp_1aedfc53e08b37cc8ccaf4c705a7c701f1" kindref="member">calculateSize</ref>(vector&lt;Point&gt;<sp/>ROI){</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Fit<sp/>an<sp/>ellipse<sp/>to<sp/>ROI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>RotatedRect<sp/>boundingBox;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>boundingBox<sp/>=<sp/>fitEllipse(ROI);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Calculate<sp/>ellipse<sp/>from<sp/>rotated<sp/>rectangle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>Size2i<sp/>axes;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>axes.height<sp/>=<sp/>(int)boundingBox.size.height<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>axes.width<sp/>=<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)boundingBox.size.width<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>axes;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="function_8h_1ae8d4c04b6c18c68c18dc8b1518d86a54" refkind="member"><highlight class="normal">Mat<sp/><ref refid="function_8cpp_1ae8d4c04b6c18c68c18dc8b1518d86a54" kindref="member">createMask</ref>(Size<sp/>sizeOfMask,<sp/>vector&lt;Point&gt;<sp/>ROI){</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>mask=Mat::zeros(sizeOfMask,CV_8UC3);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;Point&gt;<sp/>&gt;<sp/>ROI_Array;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Push<sp/>ROI<sp/>to<sp/>an<sp/>array<sp/>to<sp/>pass<sp/>as<sp/>argument<sp/>to<sp/>fillPoly<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>ROI_Array.push_back(ROI);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>Scalar<sp/>white<sp/>=<sp/>Scalar(255,<sp/>255,<sp/>255);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>fillPoly(mask,ROI_Array,white);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mask;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="function_8h_1ae4879e9efbf23c4fdcb7a24f7a2e3cbb" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="function_8cpp_1ae4879e9efbf23c4fdcb7a24f7a2e3cbb" kindref="member">countBadPixel</ref>(Mat<sp/>LabImage,<sp/>Mat<sp/>maskImage)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>cvtColor(maskImage,<sp/>maskImage,<sp/>COLOR_BGR2GRAY);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numberOfBadPixel<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>LabImage.rows;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uchar<sp/>*lab_data<sp/>=<sp/>LabImage.ptr&lt;uchar&gt;(i);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>LabImage.cols;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l<sp/>=<sp/>*lab_data++;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l=l*100/255;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>*lab_data++-128;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>*lab_data++-128;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maskImage.at&lt;uchar&gt;(i,<sp/>j)<sp/>==<sp/>255<sp/>&amp;&amp;<sp/><ref refid="color_profile_8cpp_1a5ac86ff469e90739f63641939c414f55" kindref="member">color</ref>(l,a,<sp/>b)<sp/>==<sp/><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1cadbf1dee1b8cd7ea3c82661943c7b74f4" kindref="member">OTHER</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numberOfBadPixel++;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>numberOfBadPixel;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="function_8h_1a742665d7d95453ad56253ee8091c7963" refkind="member"><highlight class="normal"><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4" kindref="member">STATUS</ref><sp/><ref refid="function_8cpp_1a742665d7d95453ad56253ee8091c7963" kindref="member">gradeTomato</ref>(<ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1c" kindref="member">Color</ref><sp/>colorID,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nOfBadPixels){</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>BAD<sp/>PIXELS:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>nOfBadPixels<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t|&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>badTomato<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nOfBadPixels<sp/>&gt;<sp/><ref refid="function_8h_1aa8b334ef12d06c60c70a7a7a5332c2ee" kindref="member">MAX_BAD_PIXEL</ref>)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>badTomato<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(colorID)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88" kindref="member">RED</ref>:</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(badTomato)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a3e1d0b643141525ab7726a75c0b33c49" kindref="member">RED_BAD</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a7e8eb9fcc440e84ed79330d0d511c6a2" kindref="member">RED_NORMAL</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1cae735a848bf82163a19236ead1c3ef2d2" kindref="member">YELLOW</ref>:</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(badTomato)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a742c52635c20c342e71adabdfda0c369" kindref="member">YELLOW_BAD</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a0f5b10c2a176fd5585690a8038598f89" kindref="member">YELLOW_NORMAL</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca" kindref="member">GREEN</ref>:</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(badTomato)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a6a7bb408673e07c9fd71397bf814e88c" kindref="member">GREEN_BAD</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a645c6b6a4b4e8b6411079b14a518155a" kindref="member">GREEN_NORMAL</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4ad2dd9ae53d40a23f5c31049a0aac0396" kindref="member">SKIP_SUCCESS</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="function_8h_1a4ac12e3e318d9cea7de43fdd378aec28" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="function_8cpp_1a4ac12e3e318d9cea7de43fdd378aec28" kindref="member">showInfo</ref>(Size2i<sp/>sizeOfTomato,<sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4" kindref="member">STATUS</ref><sp/>grade){</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(grade)<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a3e1d0b643141525ab7726a75c0b33c49" kindref="member">RED_BAD</ref>:</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;RED<sp/>BAD<sp/>\t|&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a7e8eb9fcc440e84ed79330d0d511c6a2" kindref="member">RED_NORMAL</ref>:</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;RED<sp/>NORMAL<sp/>\t|&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a742c52635c20c342e71adabdfda0c369" kindref="member">YELLOW_BAD</ref>:</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;YELLOW<sp/>BAD<sp/>\t|&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a0f5b10c2a176fd5585690a8038598f89" kindref="member">YELLOW_NORMAL</ref>:</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;YELLOW<sp/>NORMAL<sp/>\t|&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a6a7bb408673e07c9fd71397bf814e88c" kindref="member">GREEN_BAD</ref>:</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;GREEN<sp/>BAD<sp/>\t|&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4a645c6b6a4b4e8b6411079b14a518155a" kindref="member">GREEN_NORMAL</ref>:</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;GREEN<sp/>NORMAL<sp/>\t|&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;NO<sp/>TOMATO<sp/>\t|&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>SIZE:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>sizeOfTomato.height<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>x<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>sizeOfTomato.width<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="function_8h_1a1d36cded4b486b32db5ae04d3c01eeff" refkind="member"><highlight class="normal">Mat<sp/><ref refid="function_8cpp_1a1d36cded4b486b32db5ae04d3c01eeff" kindref="member">runOnImage</ref>(Mat<sp/>srcImage){</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mat<sp/>LabImage(srcImage.rows,<sp/>srcImage.cols,<sp/>CV_8UC3);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvtColor(srcImage,<sp/>LabImage,<sp/>COLOR_BGR2Lab);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mat<sp/>segImage(srcImage.rows,<sp/>srcImage.cols,<sp/>CV_8U);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1c" kindref="member">Color</ref><sp/>colorID;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="function_8cpp_1adbea5241a0432c4dec27b2f464c9ad43" kindref="member">SegmentImage</ref>(LabImage,segImage,colorID);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imshow(</highlight><highlight class="stringliteral">&quot;segmented&quot;</highlight><highlight class="normal">,segImage);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(colorID<sp/>!=<sp/><ref refid="color_profile_8h_1ab87bacfdad76e61b9412d7124be44c1cadbf1dee1b8cd7ea3c82661943c7b74f4" kindref="member">OTHER</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;Point&gt;<sp/>ROI<sp/>=<sp/>{Point(0,<sp/>0)};</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ROI<sp/>=<sp/><ref refid="function_8cpp_1aedb55be6893890e03c2775a993eb17c2" kindref="member">detectROI</ref>(segImage);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Size2i<sp/>tomatoSize;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tomatoSize<sp/>=<sp/><ref refid="function_8cpp_1aedfc53e08b37cc8ccaf4c705a7c701f1" kindref="member">calculateSize</ref>(ROI);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Size<sp/>sizeOfMask(srcImage.cols,srcImage.rows);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mat<sp/>maskImage<sp/>=<sp/><ref refid="function_8cpp_1ae8d4c04b6c18c68c18dc8b1518d86a54" kindref="member">createMask</ref>(sizeOfMask,<sp/>ROI);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imshow(</highlight><highlight class="stringliteral">&quot;mask&quot;</highlight><highlight class="normal">,maskImage);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>badPixels<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>badPixels<sp/>=<sp/><ref refid="function_8cpp_1ae4879e9efbf23c4fdcb7a24f7a2e3cbb" kindref="member">countBadPixel</ref>(LabImage,<sp/>maskImage);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="function_8h_1a32c27cc471df37f4fc818d65de0a56c4" kindref="member">STATUS</ref><sp/>grade=<ref refid="function_8cpp_1a742665d7d95453ad56253ee8091c7963" kindref="member">gradeTomato</ref>(colorID,<sp/>badPixels);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="function_8cpp_1a4ac12e3e318d9cea7de43fdd378aec28" kindref="member">showInfo</ref>(tomatoSize,grade);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Scalar<sp/>black_color<sp/>=<sp/>Scalar(0,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>polylines(srcImage,<sp/>ROI,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>black_color,<sp/>2,<sp/>8);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RotatedRect<sp/>rec=fitEllipse(ROI);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RotatedRect<sp/>rec2=minAreaRect(ROI);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ellipse(srcImage,rec,black_color,2,8);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>srcImage;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Skipped<sp/>because<sp/>of<sp/>0<sp/>tomato<sp/>detected...&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>srcImage;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(exception<sp/>&amp;e)</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Standard<sp/>exception:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.what()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-12);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="function_8h_1ab0c510222687826611917eb843e29187" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="function_8cpp_1ab0c510222687826611917eb843e29187" kindref="member">runOnCamera</ref>(VideoCapture<sp/>camera){</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!camera.isOpened()){</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>opening<sp/>video/camera!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>resolution<sp/>of<sp/>the<sp/>frame<sp/>is<sp/>obtained.The<sp/>default<sp/>resolution<sp/>is<sp/>system<sp/>dependent.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frame_width<sp/>=<sp/>camera.get(CV_CAP_PROP_FRAME_WIDTH);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frame_height<sp/>=<sp/>camera.get(CV_CAP_PROP_FRAME_HEIGHT);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>VideoWriter<sp/>video(</highlight><highlight class="stringliteral">&quot;outcpp.avi&quot;</highlight><highlight class="normal">,<sp/>CV_FOURCC(</highlight><highlight class="charliteral">&apos;M&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;J&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;P&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;G&apos;</highlight><highlight class="normal">),<sp/>10,<sp/>Size(frame_width,<sp/>frame_height));</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mat<sp/>frame;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>camera<sp/>&gt;&gt;<sp/>frame;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(frame.empty())</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mat<sp/>outFrame<sp/>=<sp/><ref refid="function_8cpp_1a1d36cded4b486b32db5ae04d3c01eeff" kindref="member">runOnImage</ref>(frame);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>video.write(outFrame);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imshow(</highlight><highlight class="stringliteral">&quot;On<sp/>Camera&quot;</highlight><highlight class="normal">,<sp/>outFrame);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>(char)<sp/>waitKey(40);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>==<sp/>27)</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>camera.release();</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>video.release();</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Henry/Documents/GitHub/tomato_classification/function.cpp"/>
+  </compounddef>
+</doxygen>
