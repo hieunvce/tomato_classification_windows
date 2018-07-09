@@ -46,11 +46,11 @@ int main(int argc, char** argv) {
         imshow("d image",d);
         waitKey(0);
     }*/
-    Mat srcImage=imread(argv[1]);
-    imshow("source image",srcImage);
+    Mat srcImage=imread("images1.jpg");
+    //imshow("source image",srcImage);
     Mat d = runOnImage(srcImage);
-    namedWindow("d image",CV_WINDOW_AUTOSIZE);
-    imshow("d image",d);
+    namedWindow("Result image",CV_WINDOW_AUTOSIZE);
+    imshow("Result image",d);
     waitKey(0);
     return 0;
 }

@@ -310,6 +310,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\Henry\Documents\GitHub\tomato_classification\main.cpp" />
+    <ClCompile Include="runProgram.cpp" />
     <ClInclude Include="C:\Users\Henry\Documents\GitHub\tomato_classification\colorProfile.h" />
     <ClCompile Include="C:\Users\Henry\Documents\GitHub\tomato_classification\colorProfile.cpp" />
     <ClInclude Include="C:\Users\Henry\Documents\GitHub\tomato_classification\function.h" />
@@ -317,6 +318,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\Henry\Documents\GitHub\tomato_classification\stdafx.cpp" />
     <ClInclude Include="C:\Users\Henry\Documents\GitHub\tomato_classification\stdafx.h" />
     <ClInclude Include="C:\Users\Henry\Documents\GitHub\tomato_classification\targetver.h" />
+    <ClInclude Include="runProgram.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\Henry\Documents\GitHub\tomato_classification\build\ZERO_CHECK.vcxproj">
